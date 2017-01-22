@@ -18,3 +18,6 @@ eureka:
 # HTTP Server
 server:
   port: 3333   # HTTP (Tomcat) port
+
+jwt:
+  secretKey: RHNuM2dNWWF6aDVhNkM0M2E1eG84ejcz

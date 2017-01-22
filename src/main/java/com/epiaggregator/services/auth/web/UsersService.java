@@ -14,4 +14,8 @@ public class UsersService {
     public GetUserResponse getUserByEmail(String email) {
         return restTemplate.getForObject("http://users-service/v1/users?email="+email, GetUserResponse.class);
     }
+
+    public GetUserResponse getUserById(String id) {
+        return restTemplate.getForObject("http://users-service/v1/users/"+id, GetUserResponse.class);
+    }
 }
